@@ -212,21 +212,21 @@ and open the template in the editor.
                         <form action="#">
                             <div class="fields">
                                 <div class="field name">
-                                    <input type="text" placeholder="Name" required/>
+                                    <input type="text" id="name" placeholder="Name" required/>
                                 </div>
                                 <div class="field email">
-                                    <input type="email" placeholder="Email" required/>
+                                    <input type="email" id="email" placeholder="Email" required/>
                                 </div>
                                 
                             </div>
                             <div class="field">
                                 <div class="field name">
-                                    <input type="text" placeholder="Subject" required />
+                                    <input type="text" id="subject" placeholder="Subject" required />
                                 </div>
                                 
                                 
                                 <div class="field textarea">
-                                    <textarea cols="30" rows="10" placeholder="Description of project" required></textarea>
+                                    <textarea cols="30" id="desc" rows="10" placeholder="Description of project" required></textarea>
                                 </div>
                                 <div class="button">
                                     <button type="submit">Message</button>
@@ -250,6 +250,17 @@ and open the template in the editor.
 
         <script src="js/script.js"></script>
         <script src="js/smooth-scroll.js"></script>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<!--         <script>
+           function store(e) {
+                localStorage.setItem('local', e.value)
+            }
+
+            // if previous storage exists, use it
+            if(localStorage.getItem('local') !== null) {
+                document.getElementById('local-input').value = localStorage.getItem('local')
+            }
+        </script> -->
         <script>
             var scroll = new SmoothScroll('a[href*="#"]');
         </script>
